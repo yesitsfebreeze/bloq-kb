@@ -2,9 +2,10 @@
 	"editor.formatOnSave": false,
 	"editor.formatOnPaste": false,
 	"leadermode.keybindings": {
-		"gg": {
+		"mm": {
 			"label": "Build",
 			"command": "workbench.action.tasks.build"
 		},
 	}
 }
+

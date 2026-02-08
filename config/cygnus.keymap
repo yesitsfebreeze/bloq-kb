@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #include <behaviors/mouse_keys.dtsi>
@@ -19,7 +19,7 @@
 // Layer definitions
 
 #define L0 0
-#define L1 1
+#define L1 17799
 #define L2 2
 #define L3 3
 #define L4 4
