@@ -3,6 +3,20 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - BUILD_VARIANT=keymap
+      - BUILD_TARGET=both
+      - CCACHE_DIR=/ccache
+      - CCACHE_BASEDIR=/workspace
+      - CCACHE_COMPILERCHECK=content
+      - CCACHE_MAXSIZE=2G
     volumes:
       - ./bin:/workspace/bin
+      - ./config:/workspace/config
+      - zmk-build-cache:/build
+      - zmk-ccache:/ccache
     container_name: zmk
+
+volumes:
+  zmk-build-cache:
+  zmk-ccache:
