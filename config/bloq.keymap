@@ -120,7 +120,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BSPC";
             bindings = <&kp BACKSPACE &kp DELETE>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -129,7 +128,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SLASH";
             bindings = <&kp SLASH &kp BACKSLASH>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -138,7 +136,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DOT";
             bindings = <&kp DOT &kp COLON>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -147,7 +144,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA";
             bindings = <&kp COMMA &kp SEMI>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -156,7 +152,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LPAREN";
             bindings = <&kp LEFT_PARENTHESIS &kp LEFT_BRACE>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -165,7 +160,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RPAREN";
             bindings = <&kp RIGHT_PARENTHESIS &kp RIGHT_BRACE>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -174,7 +168,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LBRACKET";
             bindings = <&kp LEFT_BRACKET &kp LESS_THAN>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -183,7 +176,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RBRACKET";
             bindings = <&kp RIGHT_BRACKET &kp GREATER_THAN>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -192,7 +184,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "COLON";
             bindings = <&kp COLON &kp SEMI>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -201,12 +192,10 @@
             compatible = "zmk,behavior-mod-morph";
             label = "QUOTES";
             bindings = <&kp SINGLE_QUOTE &kp DOUBLE_QUOTES>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
-
 
     keymap {
         compatible = "zmk,keymap";
@@ -214,10 +203,10 @@
         NOR {
             display-name = "Base";
             bindings = <
-&gresc  &kp L  &kp W      &kp T    &kp Y             &kp J              &kp U   &kp M     &kp O  &trans
-&kp Z   &kp R  &kp S      &kp D    &kp G             &kp H              &kp N   &kp E     &kp I  &kp Q
-&mtc LEFT_SHIFT A  &kp X  &kp C      &kp V    &l1_comma L1 0    &l2_dot L2 0       &kp F   &kp B     &kp K  &mtc RIGHT_SHIFT P
-               &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 ENTER     &bspc  &kp LGUI
+&gresc             &kp L  &kp W      &kp T    &kp Y             &kp J          &kp U  &kp M     &kp O  &trans
+&kp Z              &kp R  &kp S      &kp D    &kp G             &kp H          &kp N  &kp E     &kp I  &kp Q
+&mtc LEFT_SHIFT A  &kp X  &kp C      &kp V    &l1_comma L1 0    &l2_dot L2 0   &kp F  &kp B     &kp K  &mtc RIGHT_SHIFT P
+                          &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 ENTER  &bspc  &kp LGUI
             >;
         };
 
@@ -232,10 +221,10 @@
 
         NUM {
             bindings = <
-&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_3  &kp DEL
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &dot          &kp N0
-&trans          &kp N7  &kp N8  &kp N9  &kp SLASH    &kp N7        &kp N8        &kp N9        &comma        &kp EQUAL
-                        &trans  &trans  &trans       &trans        &trans        &trans
+&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp N0     &kp N1  &kp N2  &kp N3  &kp DEL
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0       &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp N0
+&kp LSHFT       &kp N7  &kp N8  &kp N9  &comma       &dot       &kp N7  &kp N8  &kp N9  &kp RSHFT
+                        &trans  &trans  &trans       &trans     &trans  &trans
             >;
         };
 
