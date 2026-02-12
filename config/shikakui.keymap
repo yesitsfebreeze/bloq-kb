@@ -207,16 +207,6 @@
         };
     };
 
-    //    combos {
-    //        compatible = "zmk,combos";
-    //
-    //       ComboLayer {
-    //            timeout-ms = <250>;
-    //            slow-release;
-    //            bindings = <&mo L3>;
-    //            key-positions = <32 33>;
-    //        };
-    //    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -224,10 +214,10 @@
         NOR {
             display-name = "Base";
             bindings = <
-&gresc  &kp L  &kp W      &kp T    &kp Y             &kp J              &kp U   &kp M     &kp O  &kp ENTER
+&gresc  &kp L  &kp W      &kp T    &kp Y             &kp J              &kp U   &kp M     &kp O  &trans
 &kp Z   &kp R  &kp S      &kp D    &kp G             &kp H              &kp N   &kp E     &kp I  &kp Q
-&kp A   &kp X  &kp C      &kp V    &l1_comma L1 0    &l2_dot L2 0       &kp F   &kp B     &kp K  &kp P
-               &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 BACKSPACE  &slash  &kp LGUI
+&mtc LEFT_SHIFT A  &kp X  &kp C      &kp V    &l1_comma L1 0    &l2_dot L2 0       &kp F   &kp B     &kp K  &mtc RIGHT_SHIFT P
+               &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 ENTER     &bspc  &kp LGUI
             >;
         };
 
