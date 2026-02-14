@@ -12,13 +12,13 @@ build-left: prepare-bin
 build-right: prepare-bin
 	@docker compose run --rm -e BUILD_VARIANT=keymap -e BUILD_TARGET=right zmk-build
 
-pobuild-all: prepare-bin
+build-all: prepare-bin
 	@docker compose run --rm -e BUILD_VARIANT=all -e BUILD_TARGET=both zmk-build
 
-build-fresh: prepare-bin
+rebuild: prepare-bin
 	@docker compose down --volumes
 	@docker compose run --rm --build -e BUILD_VARIANT=all zmk-build
-	@docker compose down
+	@docker compose down 
 
 sync:
 	@git pull

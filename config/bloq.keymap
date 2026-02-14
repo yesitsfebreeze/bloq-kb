@@ -86,40 +86,22 @@
             #binding-cells = <2>;
             tapping-term-ms = <TAPPING_TERM>;
             flavor = "tap-preferred";
-            bindings = <&kp &kp>;
+            bindings = <&kp>, <&kp>;
         };
 
         ltc: layer_tap_custom {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <TAPPING_TERM>;
-            quick-tap-ms = <TAPPING_TERM>;
             flavor = "tap-preferred";
-            bindings = <&mo &kp>;
-        };
-
-        l1_comma: l1_comma {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            quick-tap-ms = <TAPPING_TERM>;
-            flavor = "tap-preferred";
-            bindings = <&mo &comma>;
-        };
-
-        l2_dot: l2_dot {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            quick-tap-ms = <TAPPING_TERM>;
-            flavor = "tap-preferred";
-            bindings = <&mo &dot>;
+            bindings = <&mo>, <&kp>;
         };
 
         bspc: bspc {
             compatible = "zmk,behavior-mod-morph";
             label = "BSPC";
-            bindings = <&kp BACKSPACE &kp DELETE>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -127,7 +109,8 @@
         slash: slash {
             compatible = "zmk,behavior-mod-morph";
             label = "SLASH";
-            bindings = <&kp SLASH &kp BACKSLASH>;
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -135,7 +118,8 @@
         dot: dot {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT";
-            bindings = <&kp DOT &kp COLON>;
+            bindings = <&kp DOT>, <&kp COLON>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -143,7 +127,8 @@
         comma: comma {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA";
-            bindings = <&kp COMMA &kp SEMI>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -151,7 +136,8 @@
         lparen: lparen {
             compatible = "zmk,behavior-mod-morph";
             label = "LPAREN";
-            bindings = <&kp LEFT_PARENTHESIS &kp LEFT_BRACE>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -159,7 +145,8 @@
         rparen: rparen {
             compatible = "zmk,behavior-mod-morph";
             label = "RPAREN";
-            bindings = <&kp RIGHT_PARENTHESIS &kp RIGHT_BRACE>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -167,7 +154,8 @@
         lbracket: lbracket {
             compatible = "zmk,behavior-mod-morph";
             label = "LBRACKET";
-            bindings = <&kp LEFT_BRACKET &kp LESS_THAN>;
+            bindings = <&kp LEFT_BRACKET>, <&kp LESS_THAN>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -175,7 +163,8 @@
         rbracket: rbracket {
             compatible = "zmk,behavior-mod-morph";
             label = "RBRACKET";
-            bindings = <&kp RIGHT_BRACKET &kp GREATER_THAN>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp GREATER_THAN>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -183,7 +172,8 @@
         colon: colon {
             compatible = "zmk,behavior-mod-morph";
             label = "COLON";
-            bindings = <&kp COLON &kp SEMI>;
+            bindings = <&kp COLON>, <&kp SEMI>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -191,7 +181,8 @@
         quotes: quotes {
             compatible = "zmk,behavior-mod-morph";
             label = "QUOTES";
-            bindings = <&kp SINGLE_QUOTE &kp DOUBLE_QUOTES>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -203,28 +194,28 @@
         NOR {
             display-name = "Base";
             bindings = <
-&gresc             &kp L  &kp W      &kp T    &kp Y             &kp J          &kp U  &kp M     &kp O  &trans
-&kp Z              &kp R  &kp S      &kp D    &kp G             &kp H          &kp N  &kp E     &kp I  &kp Q
-&mtc LEFT_SHIFT A  &kp X  &kp C      &kp V    &l1_comma L1 0    &l2_dot L2 0   &kp F  &kp B     &kp K  &mtc RIGHT_SHIFT P
+&gresc             &kp L  &kp W      &kp D    &kp Y             &kp J          &kp U  &kp M     &kp O  &trans
+&kp Z              &kp R  &kp S      &kp T    &kp G             &kp H          &kp N  &kp E     &kp I  &kp Q
+&mtc LEFT_SHIFT A  &kp X  &kp C      &kp V    &comma            &dot           &kp F  &kp B     &kp K  &mtc RIGHT_SHIFT P
                           &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 ENTER  &bspc  &kp LGUI
             >;
         };
 
         NAV {
             bindings = <
-&trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket  &trans   &trans   &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen    &colon   &quotes  &trans  &trans
-&trans          &kp PAGE_UP     &kp C_PP      &kp PAGE_DOWN  &trans       &trans     &dot     &comma   &trans  &trans
-                                &trans        &kp LEFT_GUI   &trans       &trans     &kp DEL  &trans
+&trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket     &trans   &trans   &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen       &colon   &quotes  &trans  &trans
+&trans          &kp PAGE_UP     &kp C_PP      &kp PAGE_DOWN  &trans       &trans        &dot     &comma   &trans  &trans
+                                &trans        &kp LEFT_GUI   &trans       &ltc L3 BACKSPACE  &kp DEL  &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp N0     &kp N1  &kp N2  &kp N3  &kp DEL
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0       &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp N0
-&kp LSHFT       &kp N7  &kp N8  &kp N9  &comma       &dot       &kp N7  &kp N8  &kp N9  &kp RSHFT
-                        &trans  &trans  &trans       &trans     &trans  &trans
+&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_3  &kp DEL
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &dot          &kp N0
+&trans          &kp N7  &kp N8  &kp N9  &kp SLASH       &kp N7        &kp N8        &kp N9        &comma        &kp EQUAL
+                        &trans  &trans  &ltc L3 SPACE   &trans        &trans        &trans
             >;
         };
 
@@ -234,24 +225,6 @@
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp W     &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
 &trans  &msc SCRL_UP    &mkp MB3        &msc SCRL_DOWN   &trans    &kp F11  &kp F12  &trans  &trans  &trans
                         &trans          &trans           &trans    &trans   &trans   &trans
-            >;
-        };
-
-        EXTRA {
-            bindings = <
-&trans  &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)    &trans  &trans  &trans  &trans  &trans
-                   &trans     &trans     &trans       &trans  &trans  &trans
-            >;
-        };
-
-        QWERTY {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
