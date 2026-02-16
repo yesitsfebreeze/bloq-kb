@@ -194,28 +194,28 @@
         NOR {
             display-name = "Base";
             bindings = <
-&gresc             &kp L  &kp W      &kp D    &kp Y             &kp J          &kp U  &kp M     &kp O  &trans
-&kp Z              &kp R  &kp S      &kp T    &kp G             &kp H          &kp N  &kp E     &kp I  &kp Q
-&mtc LEFT_SHIFT A  &kp X  &kp C      &kp V    &comma            &dot           &kp F  &kp B     &kp K  &mtc RIGHT_SHIFT P
-                          &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 ENTER  &bspc  &kp LGUI
+&gresc             &kp L  &kp W      &kp D    &kp Y            &kp J          &kp U  &kp M     &kp O  &trans
+&kp Z              &kp R  &kp S      &kp T    &kp G            &kp H          &kp N  &kp E     &kp I  &kp Q
+&mtc LEFT_SHIFT A  &kp X  &kp C      &kp V    &comma           &dot           &kp F  &kp B     &kp K  &mtc RIGHT_SHIFT P
+                          &kp LCTRL  &kp TAB  &ltc L1 SPACE    &ltc L2 ENTER  &bspc  &kp LGUI
             >;
         };
 
         NAV {
             bindings = <
-&trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket     &trans   &trans   &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen       &colon   &quotes  &trans  &trans
-&trans          &kp PAGE_UP     &kp C_PP      &kp PAGE_DOWN  &trans       &trans        &dot     &comma   &trans  &trans
+&trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket          &trans   &trans   &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen            &colon   &quotes  &trans  &trans
+&trans          &kp PAGE_UP     &kp C_PP      &kp PAGE_DOWN  &trans       &trans             &dot     &comma   &trans  &trans
                                 &trans        &kp LEFT_GUI   &trans       &ltc L3 BACKSPACE  &kp DEL  &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_3  &kp DEL
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &dot          &kp N0
-&trans          &kp N7  &kp N8  &kp N9  &kp SLASH       &kp N7        &kp N8        &kp N9        &comma        &kp EQUAL
-                        &trans  &trans  &ltc L3 SPACE   &trans        &trans        &trans
+&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL        &kp N0  &kp N1  &kp N2  &kp NUMBER_3  &kp DEL
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0           &trans  &kp N4  &kp N5  &kp N6        &kp N0
+&trans          &kp N7  &kp N8  &kp N9  &kp SLASH        &trans  &kp N7  &kp N8  &kp N9        &kp EQUAL
+                        &trans  &trans  &ltc L3 SPACE    &trans  &trans  &trans
             >;
         };
 
