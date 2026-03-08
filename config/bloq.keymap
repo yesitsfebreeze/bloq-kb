@@ -203,18 +203,18 @@
         NOR {
             display-name = "Base";
             bindings = <
-&gresc             &kp L  &kp W      &kp T    &kp Y             &kp J          &kp U  &kp M     &kp O  &trans
-&kp Z              &kp R  &kp S      &kp D    &kp G             &kp H          &kp N  &kp E     &kp I  &kp Q
-&mtc LEFT_SHIFT A  &kp X  &kp C      &kp V    &l1_comma L1 0    &l2_dot L2 0   &kp F  &kp B     &kp K  &mtc RIGHT_SHIFT P
-                          &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 ENTER  &bspc  &kp LGUI
+&gresc             &kp L  &kp W      &kp D    &kp Y             &kp J          &kp U  &kp M     &kp O  &trans
+&kp Z              &kp R  &kp S      &kp T    &kp G             &kp H          &kp N  &kp E     &kp I  &kp Q
+&mtc LEFT_SHIFT A  &kp X  &kp C      &kp V    &comma            &dot           &kp F  &kp B     &kp K  &mtc RIGHT_SHIFT P
+                          &kp LCTRL  &kp TAB  &ltc L1 SPACE     &bspc          &ltc L2 ENTER  &kp LGUI
             >;
         };
 
         NAV {
             bindings = <
 &trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket  &trans   &trans   &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen    &colon   &quotes  &trans  &trans
-&trans          &kp PAGE_UP     &kp C_PP      &kp PAGE_DOWN  &trans       &trans     &dot     &comma   &trans  &trans
+&trans          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen    &colon   &quotes  &trans  &trans
+&kp LEFT_SHIFT  &kp PAGE_UP     &kp C_PP      &kp PAGE_DOWN  &trans       &trans     &dot     &comma   &trans  &kp RIGHT_SHIFT
                                 &trans        &kp LEFT_GUI   &trans       &trans     &kp DEL  &trans
             >;
         };
