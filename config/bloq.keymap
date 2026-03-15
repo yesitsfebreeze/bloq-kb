@@ -195,6 +195,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        undo_redo: undo_redo {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UNDO_REDO";
+            bindings = <&kp K_UNDO>, <&kp K_REDO>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -203,10 +212,10 @@
         NOR {
             display-name = "Base";
             bindings = <
-&gresc             &kp L  &kp W      &kp D    &kp Y             &kp J          &kp U  &kp M     &kp O  &trans
-&kp Z              &kp R  &kp S      &kp T    &kp G             &kp H          &kp N  &kp E     &kp I  &kp Q
-&mtc LEFT_SHIFT A  &kp X  &kp C      &kp V    &comma            &dot           &kp F  &kp B     &kp K  &mtc RIGHT_SHIFT P
-                          &kp LCTRL  &kp TAB  &ltc L1 SPACE     &bspc          &ltc L2 ENTER  &kp LGUI
+&gresc             &kp L  &kp W      &kp D    &kp Y            &kp J  &kp U          &kp M     &kp O  &undo_redo
+&kp Z              &kp R  &kp S      &kp T    &kp G            &kp H  &kp N          &kp E     &kp I  &kp Q
+&mtc LEFT_SHIFT A  &kp X  &kp C      &kp V    &comma           &dot   &kp F          &kp B     &kp K  &mtc RIGHT_SHIFT P
+                          &kp LCTRL  &kp TAB  &ltc L1 SPACE    &bspc  &ltc L2 ENTER  &kp LGUI
             >;
         };
 
