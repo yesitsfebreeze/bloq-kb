@@ -215,7 +215,7 @@
 &gresc             &kp L         &kp W            &kp D            &kp Y            &kp J         &kp U             &kp M             &kp O                 &undo_redo
 &kp Z              &mtc LCTRL R  &mtc LEFT_ALT S  &mtc LEFT_GUI T  &kp G            &kp H         &mtc RIGHT_GUI N  &mtc RIGHT_ALT E  &mtc RIGHT_CONTROL I  &kp Q
 &mtc LEFT_SHIFT A  &kp X         &kp C            &kp V            &comma           &dot          &kp F             &kp B             &kp K                 &mtc RIGHT_SHIFT P
-                                 &kp LCTRL        &kp TAB          &ltc L1 SPACE    &ltc L2 bspc  &ENTER            &kp LGUI
+                                 &kp LCTRL        &kp TAB          &ltc L1 SPACE    &ltc L2 bspc  &kp ENTER          &kp LGUI
             >;
         };
 
